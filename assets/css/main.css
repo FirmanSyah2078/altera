@@ -1,10 +1,29 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
-/*
-   DI SINI TEMPAT KONFIGURASI (Pengganti tailwind.config.js)
-   Kamu bisa atur warna, font, dll di dalam blok @theme
-*/
 @theme {
   --color-altera-gold: #D4AF37;
-  --color-altera-dark: #1c1917; /* stone-900 */
+  --color-altera-dark: #1c1917;
+  --color-altera-cream: #f5f5f4;
+}
+
+/* Custom styling untuk efek Glassmorphism */
+.glass-card {
+  @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl;
+}
+
+/* Animasi Floating (Mengapung) */
+@keyframes floating {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: floating 3s ease-in-out infinite;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
 }
