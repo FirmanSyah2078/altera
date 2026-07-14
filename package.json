@@ -1,0 +1,14 @@
+{
+  "name": "altera",
+  "version": "1.0.0",
+  "description": "ALTERA Productivity Hub",
+  "main": "index.php",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./assets/css/main.css -o ./assets/css/style.css --watch",
+    "build": "npx @tailwindcss/cli -i ./assets/css/main.css -o ./assets/css/style.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "tailwindcss": "^4.0.0"
+  }
+}

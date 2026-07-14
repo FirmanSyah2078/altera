@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/*
+   DI SINI TEMPAT KONFIGURASI (Pengganti tailwind.config.js)
+   Kamu bisa atur warna, font, dll di dalam blok @theme
+*/
+@theme {
+  --color-altera-gold: #D4AF37;
+  --color-altera-dark: #1c1917; /* stone-900 */
+}
